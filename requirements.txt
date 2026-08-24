@@ -1,0 +1,23 @@
+# torch must be installed from the CUDA index first, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+
+# Service
+fastapi
+uvicorn[standard]
+pydantic
+
+# QLoRA stack
+torch
+transformers
+peft
+trl>=0.20
+datasets
+accelerate
+bitsandbytes
+huggingface-hub
+
+# Test
+pytest
+httpx
+coverage
